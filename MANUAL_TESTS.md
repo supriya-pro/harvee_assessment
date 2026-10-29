@@ -45,14 +45,10 @@ Test data: password for all users is the shared password shown on the login page
 | TC23 | Browser/Screen | Positive | Layout at 375px and in Firefox/Safari | Logged in | Resize to 375px; repeat TC12 in Firefox and Safari | standard_user | No overlap or cut-off controls; flow completes | P2 | No – cross-browser matrix as a later grid job |
 | TC24 | Resilience | Positive | Performance glitch user can still complete checkout | On login page | Log in as performance_glitch_user, run TC12 | performance_glitch_user | Flow completes; login within an agreed time (assume 5s) | P3 | No – timing varies, tracked manually |
 
-### Exploratory charter (15 minutes) – problem_user
+### Exploratory charter  – problem_user
 
 - **Mission:** Explore the shopping flow as `problem_user` to find where behaviour differs from `standard_user`.
 - **Areas:** product images and detail pages, add/remove buttons on products and cart pages, sorting, checkout form fields (especially last name).
-- **Setup:** Chrome, fresh session, DevTools console and network tab open.
-- **Heuristics:** compare against standard_user, consistency (same item everywhere), state (badge vs cart contents), data entry in every field.
-- **Notes to capture:** each deviation with steps, screenshot and console errors; sort a mix of items by time spent.
-- **Stop rule:** at 15 minutes, or after 5 distinct issues.
 
 ## 3. Strategy (under 150 words)
 
