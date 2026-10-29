@@ -43,6 +43,7 @@ Test data: password for all users is the shared password shown on the login page
 | TC21 | Usability | Positive | Error messages are clear and dismissible | On login page | Trigger error, click the error close icon | locked_out_user | Message readable, close works, field highlighted | P3 | No – judgement |
 | TC22 | Accessibility | Positive | Keyboard-only checkout | Logged in | Complete login and checkout using Tab/Enter only; run axe scan | standard_user | All controls reachable, visible focus, no critical axe violations, form fields have labels | P2 | No – manual plus separate axe job |
 | TC23 | Browser/Screen | Positive | Layout at 375px and in Firefox/Safari | Logged in | Resize to 375px; repeat TC12 in Firefox and Safari | standard_user | No overlap or cut-off controls; flow completes | P2 | No – cross-browser matrix as a later grid job |
+| TC24 | Checkout PDF | Positive | Download receipt PDF after a successful order | Logged in, order placed, on the order confirmation page | 1. Click Download receipt (PDF) 2. Open the downloaded file 3. Compare items, item total, tax and total with the overview page | standard_user, 2 items, A / B / 12345 | PDF downloads as `swag-labs-<datetime>.pdf`, opens without error and is not empty; items, prices, item total, tax and total match the overview page | P1 | Yes – smoke test, parse PDF text with PDFBox |
 
 ### Exploratory charter  – problem_user
 
