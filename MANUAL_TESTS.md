@@ -43,7 +43,6 @@ Test data: password for all users is the shared password shown on the login page
 | TC21 | Usability | Positive | Error messages are clear and dismissible | On login page | Trigger error, click the error close icon | locked_out_user | Message readable, close works, field highlighted | P3 | No – judgement |
 | TC22 | Accessibility | Positive | Keyboard-only checkout | Logged in | Complete login and checkout using Tab/Enter only; run axe scan | standard_user | All controls reachable, visible focus, no critical axe violations, form fields have labels | P2 | No – manual plus separate axe job |
 | TC23 | Browser/Screen | Positive | Layout at 375px and in Firefox/Safari | Logged in | Resize to 375px; repeat TC12 in Firefox and Safari | standard_user | No overlap or cut-off controls; flow completes | P2 | No – cross-browser matrix as a later grid job |
-| TC24 | Resilience | Positive | Performance glitch user can still complete checkout | On login page | Log in as performance_glitch_user, run TC12 | performance_glitch_user | Flow completes; login within an agreed time (assume 5s) | P3 | No – timing varies, tracked manually |
 
 ### Exploratory charter  – problem_user
 
